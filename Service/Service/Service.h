@@ -1,7 +1,6 @@
 #pragma once
 
 #include "../../Model/Estacionamiento.h"
-#include "../../Model/Usuario.h"
 
 using namespace System;
 using namespace Model;

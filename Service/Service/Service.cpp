@@ -41,16 +41,16 @@ Estacionamiento^ EstacionamientoService::Service::QueryEstacionamientoById(int e
 	}
 }
 //USUARIOS
-void EstacionamientoService::Service::AddUsuario(Usuario^ Usuario)
+void EstacionamientoService::Service::AddUsuario(Usuario^ usuario)
 {
-	ListaUsuario->Add(Usuario);
+	ListaUsuario->Add(usuario);
 }
 
-void EstacionamientoService::Service::UpdateUsuario(Usuario^ Usuario)
+void EstacionamientoService::Service::UpdateUsuario(Usuario^ usuario)
 {
 	for (int i = 0; i < ListaUsuario->Count; i++) {
-		if (ListaUsuario[i]->Id == Usuario->Id) {
-			ListaUsuario[i] = Usuario;
+		if (ListaUsuario[i]->Id == usuario->Id) {
+			ListaUsuario[i] = usuario;
 			return;
 		}
 	}

@@ -16,7 +16,6 @@ namespace Model {
         String^ Fecha;
         String^ HoraEntrada;
         String^ HoraSalida;
-        String^ HoraEntrada;
         double Tarifa;
     };
 }

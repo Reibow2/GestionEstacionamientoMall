@@ -10,6 +10,5 @@ namespace Model {
     public:
         int Piso;
         int NumeroEstacionamiento;
-        // uwu
     };
 }

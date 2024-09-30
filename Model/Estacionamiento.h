@@ -17,5 +17,8 @@ namespace Model {
         int Id;
         Coordenadas^ Ubicacion;
 
+        Estacionamiento(int id) {
+            Id = id;
+        }
     };
 }

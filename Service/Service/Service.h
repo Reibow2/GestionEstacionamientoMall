@@ -1,10 +1,12 @@
 #pragma once
 
 using namespace System;
+using namespace Model;
+using namespace System::Collections::Generic;
 
-namespace Service {
-	public ref class Class1
-	{
-		// TODO: Agregue aquí los métodos de esta clase.
-	};
+namespace EstacionamientoService {
+	public ref class Service {
+	private:
+		static List<Estacionamiento^>^ ListaEstacionamiento = gcnew List<Estacionamiento^>();
+		};
 }

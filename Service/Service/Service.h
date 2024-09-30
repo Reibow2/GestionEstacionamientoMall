@@ -1,6 +1,7 @@
 #pragma once
 
 #include "../../Model/Estacionamiento.h"
+#include "../../Model/Usuario.h"
 
 using namespace System;
 using namespace Model;
@@ -10,6 +11,7 @@ namespace EstacionamientoService {
 	public ref class Service {
 	private:
 		static List<Estacionamiento^>^ ListaEstacionamiento = gcnew List<Estacionamiento^>();
+		static List<Usuario^>^ ListaUsuario = gcnew List<Usuario^>();
 	public:
 		//Operaciones CRUD (Create, Request, Update, Delete) se utilizan para los mantenimientos de las entidades del sistema
 		static void AddEstacionamiento(Estacionamiento^);
@@ -17,5 +19,11 @@ namespace EstacionamientoService {
 		static void DeleteEstacionamiento(int estacionamientoId);
 		static List<Estacionamiento^>^ QueryAllEstacionamiento();
 		static Estacionamiento^ QueryEstacionamientoById(int estacionamientoId);
+		//Operaciones CRUD (Clientes)
+		static void AddUsuario(Usuario^);
+		static void UpdateUsuario(Usuario^);
+		static void DeleteUsuario(int UsuarioID);
+		static List<Usuario^>^ QueryAllUsuario();
+		static Usuario^ QueryUsuarioById(int UsuarioID);
 	};
 }

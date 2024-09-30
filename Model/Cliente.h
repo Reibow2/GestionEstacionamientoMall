@@ -7,6 +7,7 @@
 #pragma once
 
 #include "Usuario.h"
+#include "Vehiculo.h"
 
 using namespace System;
 
@@ -17,5 +18,7 @@ namespace Model {
         int Descuento;
         bool LugarReservado;
         String^ Profession;
+        Vehiculo^ MiVehiculo;
     };
 }
+

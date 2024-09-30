@@ -4,6 +4,7 @@
 
 
 #pragma once
+#include "Vehiculo.h"
 using namespace System;
 namespace Model {
     public ref class Ticket {
@@ -12,6 +13,7 @@ namespace Model {
         double CantTotal;
         String^ TipoPago;
         DateTime Dia;
+        Vehiculo^ GeneradoA
     };
 }
 // WEBON 

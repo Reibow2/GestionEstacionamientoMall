@@ -4,6 +4,7 @@
 
 
 #pragma once
+#include "Estacionamiento.h"
 using namespace System;
 namespace Model {
     public ref class Vehiculo {
@@ -12,6 +13,7 @@ namespace Model {
         String^ Modelo;
         String^ Color;
         String^ TipoVehiculo;
+        Estacionamiento^ AsignadoA;
     };
 
 }

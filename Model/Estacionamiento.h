@@ -6,6 +6,7 @@
 #pragma once
 
 #include "Sensor.h"
+#include "Coordenadas.h"
 using namespace System;
 
 namespace Model {
@@ -14,5 +15,7 @@ namespace Model {
         String^ HoraInicio;
         String^ HoraSalida;
         int Id;
+        Coordenadas^ Ubicacion;
+
     };
 }

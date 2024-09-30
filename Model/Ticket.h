@@ -14,4 +14,3 @@ namespace Model {
         DateTime Dia;
     };
 }
-// te voy a matar Joaquin HDPT

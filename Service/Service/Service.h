@@ -30,6 +30,11 @@ namespace EstacionamientoService {
 		static Usuario^ QueryUsuarioById(int UsuarioID);
 
 		//Operaciones CRUD (Personal Limpieza)
+		static void AddPersonalLimpieza(PersonalLimpieza^);
+		static void UpdatePersonalLimpieza(PersonalLimpieza^);
+		static void DeletePersonalLimpieza(int PersonalLimpiezaID);
+		static List<PersonalLimpieza^>^ QueryAllPersonalLimpieza();
+		static PersonalLimpieza^ QueryPersonalLimpiezaById(int PersonalLimpiezaId);
 
 	};
 }

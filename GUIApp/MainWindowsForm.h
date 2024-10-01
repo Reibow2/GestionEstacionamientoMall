@@ -198,6 +198,7 @@ namespace GUIApp {
 			this->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->Name = L"MainWindowsForm";
 			this->Text = L"MainWindowsForm";
+			this->WindowState = System::Windows::Forms::FormWindowState::Maximized;
 			this->menuStrip1->ResumeLayout(false);
 			this->menuStrip1->PerformLayout();
 			this->ResumeLayout(false);

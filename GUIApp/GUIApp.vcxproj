@@ -120,10 +120,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Cliente.cpp" />
     <ClCompile Include="Login.cpp" />
     <ClCompile Include="MainWindowsForm.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Cliente.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="Login.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -132,6 +136,9 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Cliente.resx">
+      <DependentUpon>Cliente.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.h</DependentUpon>
     </EmbeddedResource>

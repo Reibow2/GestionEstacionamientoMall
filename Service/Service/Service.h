@@ -1,12 +1,11 @@
 #pragma once
-#include "../../Model/Estacionamiento.h"
-#include "../../Model/PersonalLimpieza.h"
-
+#include "../../Model/Usuario.h"
+#include "Estacionamiento.h"
+#include "PersonalLimpieza.h"
 
 using namespace System;
-using namespace Model;
 using namespace System::Collections::Generic;
-
+using namespace Model;
 
 namespace EstacionamientoService {
 	public ref class Service {
@@ -22,7 +21,8 @@ namespace EstacionamientoService {
 		static void DeleteEstacionamiento(int estacionamientoId);
 		static List<Estacionamiento^>^ QueryAllEstacionamiento();
 		static Estacionamiento^ QueryEstacionamientoById(int estacionamientoId);
-		//Operaciones CRUD (Clientes)
+
+		//Operaciones CRUD (Usuarios)
 		static void AddUsuario(Usuario^);
 		static void UpdateUsuario(Usuario^);
 		static void DeleteUsuario(int UsuarioID);
